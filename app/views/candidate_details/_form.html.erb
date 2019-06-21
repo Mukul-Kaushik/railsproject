@@ -1,0 +1,95 @@
+<div class="main-agileinfo">
+<div class="agileits-top">
+<%= form_with(model: candidate_detail, local: true) do |form| %>
+  <% if candidate_detail.errors.any? %>
+    <div class="alert alert-warning" >
+      <h2><%= pluralize(candidate_detail.errors.count, "error") %> prohibited this candidate_detail from being saved:</h2>
+      <ul>
+      <% candidate_detail.errors.full_messages.each do |message| %>
+        <li class="alert alert-danger"><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= form.label :s_no ,"S.No."%><br>
+    <%= form.number_field :s_no %>
+  </div>
+  <div class="field">
+    <%= form.label :src_reg,"Source of registration" %>
+    <%= form.text_field :src_reg %>
+  </div>
+  <div class="field">
+    <%= form.label :zone ,"Zone"%>
+    <%= form.text_field :zone %>
+  </div>
+  <div class="field">
+    <%= form.label :DOR ,"Date of registration"%><br>
+    <%= form.date_select :DOR %>
+  </div>
+  <div class="field">
+    <%= form.label :reg_no ,"Registration number"%>
+    <%= form.text_field :reg_no %>
+  </div>
+  <div class="field">
+    <%= form.label :name ,"Name"%>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :gender,"Gender" %>
+    <%= form.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= form.label :age ,"Age"%><br>
+    <%= form.number_field :age %>
+  </div>
+  <div class="field">
+    <%= form.label :address ,"Address"%><br>
+    <%= form.text_area :address %>
+  </div>
+  <div class="field">
+    <%= form.label :branch,"Branch" %>
+    <%= form.text_field :branch %>
+  </div>
+  <div class="field">
+    <%= form.label :email,"Email" %>
+    <%= form.text_field :email %>
+  </div>
+  <div class="field">
+    <%= form.label :contact_no,"Contact number" %><br>
+    <%= form.number_field :contact_no %>
+  </div>
+  <div class="field">
+    <%= form.label :state,"State" %>
+    <%= form.text_field :state %>
+  </div>
+  <div class="field">
+    <%= form.label :qualification,"Qualification" %>
+    <%= form.text_field :qualification %>
+  </div>
+  <div class="field">
+    <%= form.label :specialization ,"Specialization"%>
+    <%= form.text_field :specialization %>
+  </div>
+  <div class="field">
+    <%= form.label :experience,"Experience" %>
+    <%= form.text_field :experience %>
+  </div>
+  <div class="field">
+    <%= form.label :remarks_mobility ,"Remarks Mobility"%><br>
+    <%= form.number_field :remarks_mobility %>
+  </div>
+  <div class="field">
+    <%= form.label :DOC ,"Date of closure"%><br>
+    <%= form.date_select :DOC%>
+  </div>
+  <div class="field">
+    <%= form.label :status,"Status" %>
+    <%= form.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= form.submit%>
+  </div>
+<% end %>
+</div>
+</div>

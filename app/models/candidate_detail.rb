@@ -26,5 +26,13 @@ class CandidateDetail < ApplicationRecord
       errors.add(:status,"Status must be one of following -> pending, joined, joining, not interested, study, not responding.")
     end
   end
+  def self.filter_result(sql_statement,parameter)
+    user=CandidateDetail.find_by_sql([sql_statement,parameter])
+    return user
+  end
+  def self.filter_count(sql_statement,parameter)
+    user=CandidateDetail.find_by_sql([sql_statement,parameter])
+    return user.count
+  end
 
 end

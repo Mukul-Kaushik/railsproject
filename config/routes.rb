@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  get 'admin_control/admin_panel'
-  get 'admin_control/admin_panel_create'
-  get 'admin_control/admin_panel_delete'
-  get 'admin_control/admin_panel_update'
-  get 'admin_control/create_user'
-  get 'admin_control/delete_user'
-  get 'admin_control/edit_user'
+  get 'Filter', to: "filter_page#filter_menu", as:"filter"
+  post "Filter_Result",to: "filter_page#filter_result", as: "filter_result"
+
   root 'candidate_details#index'
   resources :candidate_details
   devise_for :users

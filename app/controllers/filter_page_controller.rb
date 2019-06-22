@@ -14,6 +14,7 @@ class FilterPageController < ApplicationController
       end
     end
     complete_sql_query="SELECT * FROM candidate_details WHERE "+param_query[0..param_query.length-5]+" ;"
+    print complete_sql_query
     if param_query==""
 
       redirect_to filter_path,notice: "Please fill at least one field."

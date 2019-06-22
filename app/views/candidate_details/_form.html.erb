@@ -48,7 +48,7 @@
     <%= form.number_field :contact_no %>
   </div>
   <div class="field">
-    <%= form.label :state,"State " %>
+    <%= form.label :state,"State " %><br>
     <%= form.select :state, ["Andhra Pradesh",
    "Arunachal Pradesh",
    "Assam",
@@ -97,14 +97,14 @@
   </div>
   <div class="field">
     <%= form.label :remarks_mobility ,"Remarks Mobility"%><br>
-    <%= form.number_field :remarks_mobility %>
+    <%= form.select :remarks_mobility,[1,2,3,4,5,6,7,8,9,10] %>
   </div>
   <div class="field">
     <%= form.label :DOC ,"Date of closure"%><br>
     <%= form.date_select :DOC%>
   </div>
   <div class="field">
-    <%= form.label :status,"Status" %>
+    <%= form.label :status,"Status" %><br>
     <%= form.select :status,["Pending","Joined","Joining","Studying","Not interested","Not responding"] %>
   </div>
   <div class="actions">

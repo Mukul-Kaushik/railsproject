@@ -34,7 +34,7 @@
 <br>
 <div class="text-center">
 <%= link_to 'Create', new_candidate_detail_path,class:"btn btn-default"%> |
-<%= link_to 'Filter',candidate_details_path,class:"btn btn-default"%>
+<%= link_to 'Filter',filter_path,class:"btn btn-default"%>
   <%if current_user && current_user.admin %>
     | <%=link_to "Admin Panel", panel_path,class: "btn btn-default" %>
   <%end %>

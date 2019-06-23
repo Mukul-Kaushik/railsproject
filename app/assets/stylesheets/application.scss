@@ -164,7 +164,7 @@ h1 {
   padding: 3em;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"],textarea,input[type="number"],input[type="email"], input[type="password"] {
   font-size: 0.9em;
   color: #fff;
   font-weight: 100;
@@ -778,4 +778,12 @@ input.checkbox:checked:after {
   .main-w3layouts {
     padding: 1em 0 0;
   }
+}
+select {
+  overflow:hidden;
+  -moz-border-radius: 9px 9px 9px 9px;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 1px 1px 11px #330033;
+  background: #7fc759 url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
 }

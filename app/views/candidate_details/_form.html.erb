@@ -12,10 +12,6 @@
     </div>
   <% end %>
   <div class="field">
-    <%= form.label :zone ,"Zone"%>
-    <%= form.text_field :zone %>
-  </div>
-  <div class="field">
     <%= form.label :DOR ,"Date of registration"%><br>
     <%= form.date_select :DOR %>
   </div>
@@ -32,10 +28,6 @@
     <%= form.number_field :age %>
   </div>
   <div class="field">
-    <%= form.label :address ,"Address"%><br>
-    <%= form.text_area :address %>
-  </div>
-  <div class="field">
     <%= form.label :branch,"Branch" %>
     <%= form.text_field :branch %>
   </div>
@@ -46,6 +38,10 @@
   <div class="field">
     <%= form.label :contact_no,"Contact number" %><br>
     <%= form.number_field :contact_no %>
+  </div>
+  <div class="field">
+    <%= form.label :address ,"Address"%><br>
+    <%= form.text_area :address %>
   </div>
   <div class="field">
     <%= form.label :state,"State " %><br>
@@ -82,6 +78,10 @@
    "Uttar Pradesh",
    "Uttarakhand",
    "West Bengal"]%>
+  </div>
+  <div class="field">
+    <%= form.label :zone ,"Zone"%>
+    <%= form.text_field :zone %>
   </div>
   <div class="field">
     <%= form.label :qualification,"Qualification" %>

@@ -21,6 +21,7 @@ class FilterPageController < ApplicationController
     else
       @filter_result=CandidateDetail.filter_result(complete_sql_query,param_query_list)
       @filter_count=CandidateDetail.filter_count(complete_sql_query,param_query_list)
+
     end
 
 

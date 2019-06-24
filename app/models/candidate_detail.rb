@@ -31,5 +31,13 @@ class CandidateDetail < ApplicationRecord
     user=CandidateDetail.find_by_sql([sql_statement,parameter])
     return user.count
   end
+  def self.update_reg(state,id)
+    print state.to_s
+    user=CandidateDetail.find_by_id(id)
+    user.src_reg="R/"+state.to_s
+    user.reg_no="NZ/R/"+state.to_s+"/"+id.to_s
+    user.save
+
+  end
 
 end

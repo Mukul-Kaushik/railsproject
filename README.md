@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Rail Project
 
-Things you may want to cover:
+For Admin Login
+Email -> blazar@solution
+Pass -> blazar
 
-* Ruby version
+For Non Admin Login
+Email -> 123@123
+Pass -> 123456
 
-* System dependencies
+Login as admin and and go to admin panel and create new users and with password.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
